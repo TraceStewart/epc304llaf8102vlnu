@@ -3,7 +3,6 @@
 #include "inc/hw_types.h"
 #include "inc/hw_memmap.h"
 #include "driverlib/sysctl.h"
-#include "driverlib/gpio.h"
 int main(void)
 {
 	uint8_t ui8LED = 2;
