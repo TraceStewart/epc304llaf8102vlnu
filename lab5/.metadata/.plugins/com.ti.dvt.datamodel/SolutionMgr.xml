@@ -14,9 +14,6 @@
  <void id="ArrayList0" method="get">
   <object idref="SolutionManager$PersistState0"/>
   <void method="add">
-   <string>C:\Users\trace\OneDrive\Documents\GitHub\epc904laff8102vlnu\epc304llaf8102vlnu\lab5\dvt\AnalysisSolutionsTemp\AnalysisSolution1538945355692\null</string>
-  </void>
-  <void method="add">
    <string>C:\ti\ccsv7\ccs_base\dvt_4.1.0.201705251038\CCSgraphs\solutions\SingleTime\singletime</string>
   </void>
   <void method="add">
