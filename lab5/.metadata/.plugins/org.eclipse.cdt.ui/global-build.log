@@ -1,165 +1,114 @@
 
-**** Build of configuration Debug for project lab12 ****
+**** Build of configuration Debug for project lab15 ****
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
 'Building file: ../main.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
-"../main.c", line 73: warning #129-D: loop is not reachable
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
 'Finished building: ../main.c'
 ' '
-'Building target: lab12.out'
+'Building file: ../tm4c123gh6pm_startup_ccs.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d"  "../tm4c123gh6pm_startup_ccs.c"
+'Finished building: ../tm4c123gh6pm_startup_ccs.c'
+' '
+'Building target: lab15.out'
 'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab12.map" --heap_size=0 --stack_size=100 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab12_linkInfo.xml" --rom_model -o "lab12.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab15.map" --heap_size=0 --stack_size=100 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab15_linkInfo.xml" --rom_model -o "lab15.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
 <Linking>
-'Finished building target: lab12.out'
+'Finished building target: lab15.out'
 ' '
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project lab12 ****
+**** Build of configuration Debug for project lab15 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab15 ****
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
 'Building file: ../main.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
 
 >> Compilation failure
 subdir_rules.mk:9: recipe for target 'main.obj' failed
-"../main.c", line 93: error #66: expected a ";"
-"../main.c", line 63: warning #129-D: loop is not reachable
-1 error detected in the compilation of "../main.c".
+"../main.c", line 56: error #20: identifier "blue" is undefined
+"../main.c", line 57: error #20: identifier "green" is undefined
+2 errors detected in the compilation of "../main.c".
 gmake: *** [main.obj] Error 1
 gmake: Target 'all' not remade because of errors.
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project lab12 ****
+**** Build of configuration Debug for project lab15 ****
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
 'Building file: ../main.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
-"../main.c", line 63: warning #129-D: loop is not reachable
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
 'Finished building: ../main.c'
 ' '
-'Building target: lab12.out'
+'Building target: lab15.out'
 'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab12.map" --heap_size=0 --stack_size=100 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab12_linkInfo.xml" --rom_model -o "lab12.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab15.map" --heap_size=0 --stack_size=100 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab15_linkInfo.xml" --rom_model -o "lab15.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
 <Linking>
-'Finished building target: lab12.out'
+'Finished building target: lab15.out'
 ' '
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project lab12 ****
+**** Build of configuration Debug for project lab15 ****
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
 'Building file: ../main.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
 'Finished building: ../main.c'
 ' '
-'Building target: lab12.out'
+'Building target: lab15.out'
 'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab12.map" --heap_size=0 --stack_size=100 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab12_linkInfo.xml" --rom_model -o "lab12.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab15.map" --heap_size=0 --stack_size=100 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab15_linkInfo.xml" --rom_model -o "lab15.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
 <Linking>
-'Finished building target: lab12.out'
+'Finished building target: lab15.out'
 ' '
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project lab12 ****
+**** Build of configuration Debug for project lab15 ****
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
 'Building file: ../main.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
-"../main.c", line 26: warning #179-D: variable "ui32ADC0Value" was declared but never referenced
-"../main.c", line 30: warning #179-D: variable "i" was declared but never referenced
-"../main.c", line 31: warning #179-D: variable "temp_str" was declared but never referenced
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
 'Finished building: ../main.c'
 ' '
-'Building target: lab12.out'
+'Building target: lab15.out'
 'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab12.map" --heap_size=0 --stack_size=100 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab12_linkInfo.xml" --rom_model -o "lab12.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab15.map" --heap_size=0 --stack_size=100 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab15_linkInfo.xml" --rom_model -o "lab15.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
 <Linking>
-'Finished building target: lab12.out'
+'Finished building target: lab15.out'
 ' '
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project lab12 ****
+**** Build of configuration Debug for project lab15 ****
 
 "C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
 'Building file: ../main.c'
 'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
 'Finished building: ../main.c'
 ' '
-'Building target: lab12.out'
+'Building target: lab15.out'
 'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab12.map" --heap_size=0 --stack_size=100 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab12_linkInfo.xml" --rom_model -o "lab12.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab15.map" --heap_size=0 --stack_size=100 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab15_linkInfo.xml" --rom_model -o "lab15.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
 <Linking>
-'Finished building target: lab12.out'
+'Finished building target: lab15.out'
 ' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab12 ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
-'Building file: ../main.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
-'Finished building: ../main.c'
-' '
-'Building target: lab12.out'
-'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab12.map" --heap_size=0 --stack_size=100 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab12_linkInfo.xml" --rom_model -o "lab12.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
-<Linking>
-'Finished building target: lab12.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab12 ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
-'Building file: ../main.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
-'Finished building: ../main.c'
-' '
-'Building target: lab12.out'
-'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab12.map" --heap_size=0 --stack_size=100 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab12_linkInfo.xml" --rom_model -o "lab12.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
-<Linking>
-'Finished building target: lab12.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab12 ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
-'Building file: ../main.c'
-'Invoking: ARM Compiler'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
-'Finished building: ../main.c'
-' '
-'Building target: lab12.out'
-'Invoking: ARM Linker'
-"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --define=DEBUG --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab12.map" --heap_size=0 --stack_size=100 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab12_linkInfo.xml" --rom_model -o "lab12.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
-<Linking>
-'Finished building target: lab12.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab12 ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for 'all'.
 
 **** Build Finished ****
