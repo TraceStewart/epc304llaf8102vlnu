@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\trace\OneDrive\Documents\GitHub\epc904laff8102vlnu\epc304llaf8102vlnu\lab7"/>
+		<item value="C:\Users\trace\OneDrive\Documents\Fall_2018\CpE_403\TIVAC_LABs\TIVAC_LABs\lab4"/>
+		<item value="C:\Users\trace\OneDrive\Documents\Fall_2018\CpE_403\TIVAC_LABs\TIVAC_LABs\lab5"/>
 		<item value="C:\Users\trace\OneDrive\Documents\Fall_2018\CpE_403\TIVAC_LABs\TIVAC_LABs\lab8"/>
 		<item value="C:\Users\trace\OneDrive\Documents\GitHub\epc904laff8102vlnu\epc304llaf8102vlnu\lab5"/>
 	</list>
 	<section name="ExternalProjectImportWizard">
+	</section>
+	<section name="NewWizardAction">
+		<item value="com.ti.ccstudio.project.ui.wizards.project.NewCCSProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.cdt.ui.newCWizards"/>
+			<item value="com.ti.common.ui.new"/>
+		</list>
 	</section>
 </section>

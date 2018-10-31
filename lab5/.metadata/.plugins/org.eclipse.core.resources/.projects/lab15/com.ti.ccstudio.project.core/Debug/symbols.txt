@@ -1,6 +1,6 @@
 #define __unsigned_chars__ 1	/* Predefined */
-#define __DATE__ "Oct 15 2018"	/* Predefined */
-#define __TIME__ "18:53:38"	/* Predefined */
+#define __DATE__ "Oct 26 2018"	/* Predefined */
+#define __TIME__ "14:22:48"	/* Predefined */
 #define __STDC__ 1	/* Predefined */
 #define __STDC_VERSION__ 199409L	/* Predefined */
 #define __TI_C99_COMPLEX_ENABLED__ 1	/* Predefined */
@@ -37,3 +37,4 @@
 #define _OPTIMIZE_FOR_SPACE 1
 #define PART_TM4C123GH6PM 1
 #define TARGET_IS_BLIZZARD_RB1 1
+#define ccs ccs

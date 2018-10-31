@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;TSL2591_def.h&apos; to &apos;lab15&apos;" description="Move &apos;TSL2591_def.h&apos; to &apos;lab15&apos;" destination="/lab15" element1="/lab5/project/TSL2591_def.h" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1540423183094" updateReferences="true"/>
+</session>

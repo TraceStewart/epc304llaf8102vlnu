@@ -1,0 +1,49 @@
+
+**** Build of configuration Debug for project midterm ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 6 all -O 
+'Building file: ../main.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.8.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/trace/OneDrive/Documents/GitHub/epc904laff8102vlnu/epc304llaf8102vlnu/lab5/midterm" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.8.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/hibernate.h", line 229: warning #233-D: declaration is not visible outside of function
+"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/hibernate.h", line 230: warning #233-D: declaration is not visible outside of function
+"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/hibernate.h", line 231: warning #233-D: declaration is not visible outside of function
+"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/hibernate.h", line 232: warning #233-D: declaration is not visible outside of function
+"../main.c", line 31: error #20: identifier "GPIO_PB1_U1TX" is undefined
+"../main.c", line 32: error #20: identifier "GPIO_PB0_U1RX" is undefined
+"../main.c", line 46: error #20: identifier "GPIO_PB3_I2C0SDA" is undefined
+"../main.c", line 49: error #20: identifier "GPIO_PB2_I2C0SCL" is undefined
+"../main.c", line 178: warning #225-D: function "ROM_SysCtlPeripheralEnable" declared implicitly
+"../main.c", line 179: warning #225-D: function "ROM_ADCHardwareOversampleConfigure" declared implicitly
+"../main.c", line 183: warning #225-D: function "ROM_ADCSequenceStepConfigure" declared implicitly
+"../main.c", line 187: warning #225-D: function "ROM_ADCSequenceEnable" declared implicitly
+"../main.c", line 202: warning #225-D: function "ROM_ADCIntClear" declared implicitly
+"../main.c", line 203: warning #225-D: function "ROM_ADCProcessorTrigger" declared implicitly
+"../main.c", line 204: warning #225-D: function "ROM_ADCIntStatus" declared implicitly
+"../main.c", line 207: warning #225-D: function "ROM_ADCSequenceDataGet" declared implicitly
+4 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+'Building file: ../tm4c123gh6pm_startup_ccs.c'
+'Invoking: ARM Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.8.LTS/bin/armcl" -mv4 --code_state=32 --include_path="C:/Users/trace/OneDrive/Documents/GitHub/epc904laff8102vlnu/epc304llaf8102vlnu/lab5/midterm" --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.8.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d"  "../tm4c123gh6pm_startup_ccs.c"
+3 Assembly Errors, No Assembly Warnings
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'tm4c123gh6pm_startup_ccs.obj' failed
+"C:\Users\trace\AppData\Local\Temp\{4D4B1C23-396D-4DCB-BC6B-A176CA05703D}", ERROR!   at line 231: [E0001] Undefined symbol
+	    b.w     _c_int00
+
+"C:\Users\trace\AppData\Local\Temp\{4D4B1C23-396D-4DCB-BC6B-A176CA05703D}", ERROR!   at line 231: [E0003] Unexpected trailing operand(s)
+	    b.w     _c_int00
+
+"C:\Users\trace\AppData\Local\Temp\{4D4B1C23-396D-4DCB-BC6B-A176CA05703D}", ERROR!   at EOF: [E0300] The following symbols are undefined:
+  .w
+
+Errors in Source - Assembler Aborted
+gmake: *** [tm4c123gh6pm_startup_ccs.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

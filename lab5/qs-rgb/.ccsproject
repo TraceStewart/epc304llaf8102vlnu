@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<deviceVariant value="Cortex M.TM4C123GH6PM"/>
+	<deviceFamily value="TMS470"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="5.2.6"/>
+	<isElfFormat value="true"/>
+	<rts value="libc.a"/>
+	<createSlaveProjects value=""/>
+	<isTargetManual value="true"/>
+	<origin value="C:/Users/trace/OneDrive/Documents/Fall_2018/CpE_403/TIVAC_LABs/TIVAC_LABs/lab1/ccs"/>
+</projectOptions>
