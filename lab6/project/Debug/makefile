@@ -6,8 +6,8 @@ SHELL = cmd.exe
 
 CG_TOOL_ROOT := C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS
 
-GEN_OPTS__FLAG := 
-GEN_CMDS__FLAG := 
+GEN_OPTS__FLAG := --cmd_file="configPkg/compiler.opt"
+GEN_CMDS__FLAG := -l"configPkg/linker.cmd"
 
 ORDERED_OBJS += \
 "./main.obj" \
@@ -155,7 +155,8 @@ lab15.hex: $(EXE_OUTPUTS)
 
 # Other Targets
 clean:
-	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
+	-$(RM) $(GEN_CMDS__QUOTED)$(GEN_MISC_FILES__QUOTED)$(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)$(GEN_OPTS__QUOTED)
+	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
 	-$(RM) "main.obj" "tm4c123gh6pm_startup_ccs.obj" "uartstdio.obj" "ustdlib.obj" 
 	-$(RM) "main.d" "tm4c123gh6pm_startup_ccs.d" "uartstdio.d" "ustdlib.d" 
 	-@echo 'Finished clean'

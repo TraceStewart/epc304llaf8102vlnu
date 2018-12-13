@@ -1,0 +1,2 @@
+js: "./package/cfg/empty_pem4f.cfg", line 137: xdc.services.global.XDCException: xdc.PACKAGE_NOT_FOUND: can't locate the package 'ti.platforms.tiva' along the path: 'C:/ti/simplelink_cc13x0_sdk_2_30_00_20/source;C:/ti/simplelink_cc13x0_sdk_2_30_00_20/kernel/tirtos/packages;C:/ti/xdctools_3_50_08_24_core/packages;..;'. Ensure that the package path is set correctly.
+gmake.exe: *** [package/cfg/empty_pem4f.xdl] Error 1

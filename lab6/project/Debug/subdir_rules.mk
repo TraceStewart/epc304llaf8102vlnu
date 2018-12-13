@@ -5,6 +5,20 @@
 SHELL = cmd.exe
 
 # Each subdirectory must supply rules for building sources it contributes
+build-578537455:
+	@$(MAKE) -Onone -f subdir_rules.mk build-578537455-inproc
+
+build-578537455-inproc: ../empty.cfg
+	@echo 'Building file: $<'
+	@echo 'Invoking: XDCtools'
+	"C:/ti/xdctools_3_50_08_24_core/xs" --xdcpath="C:/ti/simplelink_cc13x0_sdk_2_30_00_20/source;C:/ti/simplelink_cc13x0_sdk_2_30_00_20/kernel/tirtos/packages;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -r debug -c "C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.3.LTS" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+configPkg/linker.cmd: build-578537455 ../empty.cfg
+configPkg/compiler.opt: build-578537455
+configPkg/: build-578537455
+
 main.obj: ../main.c $(GEN_OPTS) | $(GEN_HDRS)
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM Compiler'

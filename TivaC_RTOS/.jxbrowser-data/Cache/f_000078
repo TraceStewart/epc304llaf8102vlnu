@@ -1,0 +1,314 @@
+[
+  {
+    "downloadLink": "api/bundle?vid=tirtos_tivac__2.16.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project",
+    "makeofflineLink": "api/bundles?vids=tirtos_tivac__2.16.00.08",
+    "removeofflineLink": "api/resources?id=SrH-7PZ0G5I0E8&path=Software/TI-RTOS for TivaC/Development Tools/EK-TM4C123GXL/Driver Examples/Empty Examples/Empty Project&removeoffline=true",
+    "name": "Board.h",
+    "resourceType": "file",
+    "coreTypes": [
+      "Cortex M.TM4C123GH6PM"
+    ],
+    "devtools": [
+      "EK-TM4C123GXL"
+    ],
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "SrH-7PZ0G5I0E8",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "EK-TM4C123GXL"
+    ],
+    "link": "api/linkTo/SrH-7PZ0G5I0E8?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project&extname=.h",
+    "package": "TI-RTOS for TivaC",
+    "packageId": "tirtos_tivac",
+    "packageVersion": "2.16.00.08",
+    "packageUId": "tirtos_tivac__2.16.00.08",
+    "packagePath": "tirtos_tivac_2_16_00_08",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "tirtos_tivac_2_16_00_08/resources/ek_tm4C123GXLEvaluationKit/driverExamples/tiDriverExamples/emptyExamples/com_ti_rtsc_tirtostivac_example_78.dependency.tirex.json",
+    "parentID": "SrHtRAuuqy_EJM",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "Board.h",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20TivaC/Development%20Tools/EK-TM4C123GXL/Driver%20Examples/Empty%20Examples/Empty%20Project&package=com.ti.SIMPLELINK_CC13X0_SDK__2.30.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.30.00.28::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.05.04::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.3::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.08.24",
+    "packageOrder": 223,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_tivac__2.16.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project",
+    "makeofflineLink": "api/bundles?vids=tirtos_tivac__2.16.00.08",
+    "removeofflineLink": "api/resources?id=SrH_kiaGiuHv8A&path=Software/TI-RTOS for TivaC/Development Tools/EK-TM4C123GXL/Driver Examples/Empty Examples/Empty Project&removeoffline=true",
+    "name": "EK_TM4C123GXL.c",
+    "resourceType": "file",
+    "coreTypes": [
+      "Cortex M.TM4C123GH6PM"
+    ],
+    "devtools": [
+      "EK-TM4C123GXL"
+    ],
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "SrH_kiaGiuHv8A",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "EK-TM4C123GXL"
+    ],
+    "link": "api/linkTo/SrH_kiaGiuHv8A?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project&extname=.c",
+    "package": "TI-RTOS for TivaC",
+    "packageId": "tirtos_tivac",
+    "packageVersion": "2.16.00.08",
+    "packageUId": "tirtos_tivac__2.16.00.08",
+    "packagePath": "tirtos_tivac_2_16_00_08",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "tirtos_tivac_2_16_00_08/resources/ek_tm4C123GXLEvaluationKit/driverExamples/tiDriverExamples/emptyExamples/com_ti_rtsc_tirtostivac_example_78.dependency.tirex.json",
+    "parentID": "SrHtRAuuqy_EJM",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "EK_TM4C123GXL.c",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20TivaC/Development%20Tools/EK-TM4C123GXL/Driver%20Examples/Empty%20Examples/Empty%20Project&package=com.ti.SIMPLELINK_CC13X0_SDK__2.30.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.30.00.28::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.05.04::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.3::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.08.24",
+    "packageOrder": 223,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_tivac__2.16.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project",
+    "makeofflineLink": "api/bundles?vids=tirtos_tivac__2.16.00.08",
+    "removeofflineLink": "api/resources?id=SrHx-wq_4wmT9s&path=Software/TI-RTOS for TivaC/Development Tools/EK-TM4C123GXL/Driver Examples/Empty Examples/Empty Project&removeoffline=true",
+    "name": "EK_TM4C123GXL.cmd",
+    "resourceType": "file",
+    "coreTypes": [
+      "Cortex M.TM4C123GH6PM"
+    ],
+    "devtools": [
+      "EK-TM4C123GXL"
+    ],
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "SrHx-wq_4wmT9s",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "EK-TM4C123GXL"
+    ],
+    "link": "api/linkTo/SrHx-wq_4wmT9s?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project&extname=.cmd",
+    "package": "TI-RTOS for TivaC",
+    "packageId": "tirtos_tivac",
+    "packageVersion": "2.16.00.08",
+    "packageUId": "tirtos_tivac__2.16.00.08",
+    "packagePath": "tirtos_tivac_2_16_00_08",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "tirtos_tivac_2_16_00_08/resources/ek_tm4C123GXLEvaluationKit/driverExamples/tiDriverExamples/emptyExamples/com_ti_rtsc_tirtostivac_example_78.dependency.tirex.json",
+    "parentID": "SrHtRAuuqy_EJM",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "EK_TM4C123GXL.cmd",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20TivaC/Development%20Tools/EK-TM4C123GXL/Driver%20Examples/Empty%20Examples/Empty%20Project&package=com.ti.SIMPLELINK_CC13X0_SDK__2.30.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.30.00.28::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.05.04::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.3::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.08.24",
+    "packageOrder": 223,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_tivac__2.16.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project",
+    "makeofflineLink": "api/bundles?vids=tirtos_tivac__2.16.00.08",
+    "removeofflineLink": "api/resources?id=SrH-D8YPLCbGsg&path=Software/TI-RTOS for TivaC/Development Tools/EK-TM4C123GXL/Driver Examples/Empty Examples/Empty Project&removeoffline=true",
+    "name": "EK_TM4C123GXL.h",
+    "resourceType": "file",
+    "coreTypes": [
+      "Cortex M.TM4C123GH6PM"
+    ],
+    "devtools": [
+      "EK-TM4C123GXL"
+    ],
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "SrH-D8YPLCbGsg",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "EK-TM4C123GXL"
+    ],
+    "link": "api/linkTo/SrH-D8YPLCbGsg?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project&extname=.h",
+    "package": "TI-RTOS for TivaC",
+    "packageId": "tirtos_tivac",
+    "packageVersion": "2.16.00.08",
+    "packageUId": "tirtos_tivac__2.16.00.08",
+    "packagePath": "tirtos_tivac_2_16_00_08",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "tirtos_tivac_2_16_00_08/resources/ek_tm4C123GXLEvaluationKit/driverExamples/tiDriverExamples/emptyExamples/com_ti_rtsc_tirtostivac_example_78.dependency.tirex.json",
+    "parentID": "SrHtRAuuqy_EJM",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "EK_TM4C123GXL.h",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20TivaC/Development%20Tools/EK-TM4C123GXL/Driver%20Examples/Empty%20Examples/Empty%20Project&package=com.ti.SIMPLELINK_CC13X0_SDK__2.30.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.30.00.28::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.05.04::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.3::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.08.24",
+    "packageOrder": 223,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_tivac__2.16.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project",
+    "makeofflineLink": "api/bundles?vids=tirtos_tivac__2.16.00.08",
+    "removeofflineLink": "api/resources?id=SrHqG_md4gJwOk&path=Software/TI-RTOS for TivaC/Development Tools/EK-TM4C123GXL/Driver Examples/Empty Examples/Empty Project&removeoffline=true",
+    "name": "empty.c",
+    "resourceType": "file",
+    "coreTypes": [
+      "Cortex M.TM4C123GH6PM"
+    ],
+    "devtools": [
+      "EK-TM4C123GXL"
+    ],
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "SrHqG_md4gJwOk",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "EK-TM4C123GXL"
+    ],
+    "link": "api/linkTo/SrHqG_md4gJwOk?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project&extname=.c",
+    "package": "TI-RTOS for TivaC",
+    "packageId": "tirtos_tivac",
+    "packageVersion": "2.16.00.08",
+    "packageUId": "tirtos_tivac__2.16.00.08",
+    "packagePath": "tirtos_tivac_2_16_00_08",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "tirtos_tivac_2_16_00_08/resources/ek_tm4C123GXLEvaluationKit/driverExamples/tiDriverExamples/emptyExamples/com_ti_rtsc_tirtostivac_example_78.dependency.tirex.json",
+    "parentID": "SrHtRAuuqy_EJM",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "empty.c",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20TivaC/Development%20Tools/EK-TM4C123GXL/Driver%20Examples/Empty%20Examples/Empty%20Project&package=com.ti.SIMPLELINK_CC13X0_SDK__2.30.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.30.00.28::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.05.04::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.3::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.08.24",
+    "packageOrder": 223,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_tivac__2.16.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project",
+    "makeofflineLink": "api/bundles?vids=tirtos_tivac__2.16.00.08",
+    "removeofflineLink": "api/resources?id=SrHopX2i9SzCJ0&path=Software/TI-RTOS for TivaC/Development Tools/EK-TM4C123GXL/Driver Examples/Empty Examples/Empty Project&removeoffline=true",
+    "name": "empty.cfg",
+    "resourceType": "file",
+    "coreTypes": [
+      "Cortex M.TM4C123GH6PM"
+    ],
+    "devtools": [
+      "EK-TM4C123GXL"
+    ],
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "SrHopX2i9SzCJ0",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "EK-TM4C123GXL"
+    ],
+    "link": "api/linkTo/SrHopX2i9SzCJ0?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project&extname=.cfg",
+    "package": "TI-RTOS for TivaC",
+    "packageId": "tirtos_tivac",
+    "packageVersion": "2.16.00.08",
+    "packageUId": "tirtos_tivac__2.16.00.08",
+    "packagePath": "tirtos_tivac_2_16_00_08",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "tirtos_tivac_2_16_00_08/resources/ek_tm4C123GXLEvaluationKit/driverExamples/tiDriverExamples/emptyExamples/com_ti_rtsc_tirtostivac_example_78.dependency.tirex.json",
+    "parentID": "SrHtRAuuqy_EJM",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "empty.cfg",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20TivaC/Development%20Tools/EK-TM4C123GXL/Driver%20Examples/Empty%20Examples/Empty%20Project&package=com.ti.SIMPLELINK_CC13X0_SDK__2.30.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.30.00.28::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.05.04::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.3::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.08.24",
+    "packageOrder": 223,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_tivac__2.16.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project",
+    "makeofflineLink": "api/bundles?vids=tirtos_tivac__2.16.00.08",
+    "removeofflineLink": "api/resources?id=SrHewMEHHtzlRU&path=Software/TI-RTOS for TivaC/Development Tools/EK-TM4C123GXL/Driver Examples/Empty Examples/Empty Project&removeoffline=true",
+    "name": "empty_readme.txt",
+    "resourceType": "file",
+    "coreTypes": [
+      "Cortex M.TM4C123GH6PM"
+    ],
+    "devtools": [
+      "EK-TM4C123GXL"
+    ],
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "SrHewMEHHtzlRU",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "EK-TM4C123GXL"
+    ],
+    "link": "api/linkTo/SrHewMEHHtzlRU?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project&extname=.txt",
+    "package": "TI-RTOS for TivaC",
+    "packageId": "tirtos_tivac",
+    "packageVersion": "2.16.00.08",
+    "packageUId": "tirtos_tivac__2.16.00.08",
+    "packagePath": "tirtos_tivac_2_16_00_08",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "tirtos_tivac_2_16_00_08/resources/ek_tm4C123GXLEvaluationKit/driverExamples/tiDriverExamples/emptyExamples/com_ti_rtsc_tirtostivac_example_78.dependency.tirex.json",
+    "parentID": "SrHtRAuuqy_EJM",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "empty_readme.txt",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20TivaC/Development%20Tools/EK-TM4C123GXL/Driver%20Examples/Empty%20Examples/Empty%20Project&package=com.ti.SIMPLELINK_CC13X0_SDK__2.30.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.30.00.28::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.05.04::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.3::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.08.24",
+    "packageOrder": 223,
+    "offline": "true"
+  },
+  {
+    "downloadLink": "api/bundle?vid=tirtos_tivac__2.16.00.08&download=true&analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project",
+    "makeofflineLink": "api/bundles?vids=tirtos_tivac__2.16.00.08",
+    "removeofflineLink": "api/resources?id=SrHGRC0jwtRqHM&path=Software/TI-RTOS for TivaC/Development Tools/EK-TM4C123GXL/Driver Examples/Empty Examples/Empty Project&removeoffline=true",
+    "name": "makefile.defs",
+    "resourceType": "file",
+    "coreTypes": [
+      "Cortex M.TM4C123GH6PM"
+    ],
+    "devtools": [
+      "EK-TM4C123GXL"
+    ],
+    "advanced": {
+      "overrideProjectSpecDeviceId": true
+    },
+    "_id": "SrHGRC0jwtRqHM",
+    "version": "UNVERSIONED",
+    "semver": "0.0.0",
+    "dependencies": [],
+    "devtools_category": [
+      "EK-TM4C123GXL"
+    ],
+    "link": "api/linkTo/SrHGRC0jwtRqHM?analyticsDevice=undefined&analyticsDevtool=undefined&analyticsPath=Software%2FTI-RTOS%20for%20TivaC%2FDevelopment%20Tools%2FEK-TM4C123GXL%2FDriver%20Examples%2FEmpty%20Examples%2FEmpty%20Project&extname=.defs",
+    "package": "TI-RTOS for TivaC",
+    "packageId": "tirtos_tivac",
+    "packageVersion": "2.16.00.08",
+    "packageUId": "tirtos_tivac__2.16.00.08",
+    "packagePath": "tirtos_tivac_2_16_00_08",
+    "allowPartialDownload": false,
+    "linkType": "local",
+    "implictDependencyFile": "tirtos_tivac_2_16_00_08/resources/ek_tm4C123GXLEvaluationKit/driverExamples/tiDriverExamples/emptyExamples/com_ti_rtsc_tirtostivac_example_78.dependency.tirex.json",
+    "parentID": "SrHtRAuuqy_EJM",
+    "isIncludedFile": true,
+    "type": "resource",
+    "text": "makefile.defs",
+    "url": "/api/resources?path=Software/TI-RTOS%20for%20TivaC/Development%20Tools/EK-TM4C123GXL/Driver%20Examples/Empty%20Examples/Empty%20Project&package=com.ti.SIMPLELINK_CC13X0_SDK__2.30.00.20::com.ti.SIMPLELINK_CC13X2_SDK__2.30.00.45::com.ti.SIMPLELINK_MSP432_SDK__2.30.00.14::com.ti.SIMPLELINK_MSP432E4_SDK__2.30.00.14::com.ti.SIMPLELINK_CC26X2_SDK__2.30.00.34::com.ti.SIMPLELINK_CC2640R2_SDK__2.30.00.28::com.ti.SIMPLELINK_CC32XX_SDK__2.30.00.05::com.ti.SIMPLELINK_CC2640R2_SDK_BLE_EXAMPLE_PACK__1.50.00.62::com.ti.SIMPLELINK_SDK_BLE_PLUGIN__1.40.00.42::com.ti.SIMPLELINK_MSP432_SDK_WIFI_PLUGIN__2.30.00.10::com.ti.SIMPLELINK_SDK_VOICE_DETECTION_PLUGIN__1.50.00.15::com.ti.SIMPLELINK_SDK_TI_15_4_STACK_PLUGIN__2.20.00.05::com.ti.SIMPLELINK_ZIGBEE_SDK_PLUGIN__2.20.00.06::energia.core__18.0.0::energia.tool.arm-none-eabi-gcc__6.3.1-20170620::energia.tool.ino2cpp__1.0.3::energia.boards.cc13xx__5.20.0::energia.boards.cc3220emt__5.6.2::energia.boards.msp432r__5.6.3::com.ti.WATSON_MSP432E4__1.10.00.04::com.ti.WATSON_CC32XX__1.10.00.04::com.ti.SAIL__1.30.00.02::com.ti.AZURE_CC32XX__2.10.00.04::com.ti.AZURE_MSP432E4__2.10.00.04::com.ti.SIMPLELINK_SDK_NFC_PLUGIN__2.20.00.08::c2000ware_software_package__1.00.06.00::digital_power_c2000ware_sdk_software_package__1.02.00.00::powerSUITE_software_package__2.03.00.00::msp430ware__3.80.05.04::com.ti.mmwave_industrial_toolbox__3.1.1::com.ti.mmwave_automotive_toolbox__2.4.3::com.ti.AWS_CC32XX__2.10.00.04::com.ti.AWS_MSP432E4__2.10.00.04::sitara__1.02.00.00::tm4c__2.1.4.178::tirtos_msp43x__2.20.00.06::tirtos_cc13xx_cc26xx__2.21.00.06::tirtos_tivac__2.16.00.08::tirtos_simplelink__2.13.01.09::sysbios__6.50.01.12::xdctools__3.50.08.24",
+    "packageOrder": 223,
+    "offline": "true"
+  }
+]

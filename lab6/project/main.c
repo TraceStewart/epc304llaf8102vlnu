@@ -1,313 +1,141 @@
-#include <stdarg.h>
-#include <stdbool.h>
+//---------------------------------------------------------------------------------
+// Project: Blink TM4C Using BIOS (STARTER)
+// Author: Eric Wilbur
+// Date: June 2014
+//
+// Note: The function call TimerIntClear(TIMER2_BASE, TIMER_TIMA_TIMEOUT) HAS
+//       to be in the ISR. This fxn clears the TIMER's interrupt flag coming
+//       from the peripheral - it does NOT clear the CPU interrupt flag - that
+//       is done by hardware. The author struggled figuring this part out - hence
+//       the note. And, in the Swi lab, this fxn must be placed in the
+//       Timer_ISR fxn because it will be the new ISR.
+//
+// Follow these steps to create this project in CCSv6.0:
+// 1. Project -> New CCS Project
+// 2. Select Template:
+//    - TI-RTOS for Tiva-C -> Driver Examples -> EK-TM4C123 LP -> Example Projects ->
+//      Empty Project
+//    - Empty Project contains full instrumentation (UIA, RTOS Analyzer) and
+//      paths set up for the TI-RTOS version of MSP430Ware
+// 3. Delete the following files:
+//    - Board.h, empty.c, EK_TM4C123GXL.c/h, empty_readme.txt
+// 4. Add main.c from TI-RTOS Workshop Solution file for this lab
+// 5. Edit empty.cfg as needed (to add/subtract) BIOS services, delete given Task
+// 6. Build, load, run...
+//----------------------------------------------------------------------------------
+
+
+//----------------------------------------
+// BIOS header files
+//----------------------------------------
+#include <xdc/std.h>                        //mandatory - have to include first, for BIOS types
+#include <ti/sysbios/BIOS.h>                //mandatory - if you call APIs like BIOS_start()
+#include <xdc/runtime/Log.h>                //needed for any Log_info() call
+#include <xdc/cfg/global.h>                 //header file for statically defined objects/handles
+
+
+//------------------------------------------
+// TivaWare Header Files
+//------------------------------------------
 #include <stdint.h>
-#include "inc/tm4c123gh6pm.h"
-#include "inc/hw_i2c.h"
-#include "inc/hw_memmap.h"
+#include <stdbool.h>
+
 #include "inc/hw_types.h"
-#include "inc/hw_gpio.h"
-#include "driverlib/i2c.h"
+#include "inc/hw_memmap.h"
 #include "driverlib/sysctl.h"
 #include "driverlib/gpio.h"
-#include "driverlib/pin_map.h"
-#include "driverlib/uart.h"
-#include "utils/uartstdio.h"
+#include "inc/hw_ints.h"
 #include "driverlib/interrupt.h"
-#include "driverlib/hibernate.h"
-#include "TSL2591_def.h"
-#include "utils/ustdlib.h"
-#include "string.h"
-#include "driverlib/adc.h"
-#include "driverlib/rom.h"
+#include "driverlib/timer.h"
+#include <time.h>
 
-// header file to manipulate characters
-#include <ctype.h>
 
-#define BAUD_RATE 115200    // baud rate for UART in Tiva C and ESP 8266
+//----------------------------------------
+// Prototypes
+//----------------------------------------
+void hardware_init(void);
+void ledToggle(void);
+void delay(void);
 
-void ConfigureUART (void)
-//Configures the UART to run at given baud rate
+
+//---------------------------------------
+// Globals
+//---------------------------------------
+volatile int16_t i16ToggleCount = 0;
+
+
+//---------------------------------------------------------------------------
+// main()
+//---------------------------------------------------------------------------
+void main(void)
 {
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_UART1);    //enables UART module 1
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);    //enables GPIO port b
 
-    GPIOPinConfigure(GPIO_PB1_U1TX);    //configures PB1 as TX pin
-    GPIOPinConfigure(GPIO_PB0_U1RX);    //configures PB0 as RX pin
-    GPIOPinTypeUART(GPIO_PORTB_BASE, GPIO_PIN_0 | GPIO_PIN_1);  //sets the UART pin type
+   hardware_init();                         // init hardware via Xware
 
-    UARTClockSourceSet(UART1_BASE, UART_CLOCK_PIOSC);   //sets the clock source
-    //enables UARTstdio baud rate, clock, and which UART to use
-    UARTStdioConfig(1, BAUD_RATE, 16000000);
+   while(1)                                 // forever loop
+   {
+       ledToggle();                         // toggle LED
+
+       delay();                             // create a delay of ~1/2sec
+
+       i16ToggleCount += 1;                 // keep track of #toggles
+   }
+
 }
 
-void I2C0_Init ()
-//Configure/initialize the I2C0
-{
-    SysCtlPeripheralEnable (SYSCTL_PERIPH_I2C0);    //enables I2C0
-    SysCtlPeripheralEnable (SYSCTL_PERIPH_GPIOB);   //enable PORTB as peripheral
-    GPIOPinTypeI2C (GPIO_PORTB_BASE, GPIO_PIN_3);   //set I2C PB3 as SDA
-    GPIOPinConfigure (GPIO_PB3_I2C0SDA);
 
-    GPIOPinTypeI2CSCL (GPIO_PORTB_BASE, GPIO_PIN_2);    //set I2C PB2 as SCLK
-    GPIOPinConfigure (GPIO_PB2_I2C0SCL);
-    //Set the clock of the I2C to ensure proper connection
-    I2CMasterInitExpClk (I2C0_BASE, SysCtlClockGet(), false);
-    while (I2CMasterBusy (I2C0_BASE));  //wait while the master SDA is busy
+//---------------------------------------------------------------------------
+// hardware_init()
+//
+// inits GPIO pins for toggling the LED
+//---------------------------------------------------------------------------
+void hardware_init(void)
+{
+    //Set CPU Clock to 40MHz. 400MHz PLL/2 = 200 DIV 5 = 40MHz
+    SysCtlClockSet(SYSCTL_SYSDIV_5|SYSCTL_USE_PLL|SYSCTL_XTAL_16MHZ|SYSCTL_OSC_MAIN);
+
+    // ADD Tiva-C GPIO setup - enables port, sets pins 1-3 (RGB) pins for output
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
+    GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3);
+
+    // Turn on the LED
+    GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3, 4);
+
 }
 
-void I2C0_Write (uint8_t addr, uint8_t N, ...)
-//Writes data from master to slave
-//Takes the address of the device, the number of arguments, and a variable amount of register addresses to write to
+
+//---------------------------------------------------------------------------
+// ledToggle()
+//
+// toggles LED on Tiva-C LaunchPad
+//---------------------------------------------------------------------------
+void ledToggle(void)
 {
-//Find the device based on the address given
-    I2CMasterSlaveAddrSet (I2C0_BASE, addr, false);
-    while (I2CMasterBusy (I2C0_BASE));
-
-    va_list vargs;  //variable list to hold the register addresses passed
-
-    va_start (vargs, N); //initialize the variable list with the number of arguments
-//put the first argument in the list in to the I2C bus
-    I2CMasterDataPut (I2C0_BASE, va_arg(vargs, uint8_t));
-    while (I2CMasterBusy (I2C0_BASE));
-    if (N == 1) //if only 1 argument is passed, send that register command then stop
+    // LED values - 2=RED, 4=BLUE, 8=GREEN
+    if(GPIOPinRead(GPIO_PORTF_BASE, GPIO_PIN_2))
     {
-        I2CMasterControl (I2C0_BASE, I2C_MASTER_CMD_SINGLE_SEND);
-        while (I2CMasterBusy (I2C0_BASE));
-        va_end (vargs);
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3, 0);
     }
     else
-    //if more than 1, loop through all the commands until they are all sent
     {
-        I2CMasterControl (I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_START);
-        while (I2CMasterBusy (I2C0_BASE));
-        uint8_t i;
-        for (i = 1; i < N - 1; i++)
-        {
-        //send the next register address to the bus
-            I2CMasterDataPut (I2C0_BASE, va_arg(vargs, uint8_t));
-            while (I2CMasterBusy (I2C0_BASE));
-        //burst send, keeps receiving until the stop signal is received
-            I2CMasterControl (I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_CONT);
-            while (I2CMasterBusy (I2C0_BASE));
-        }
-        //puts the last argument on the SDA bus
-        I2CMasterDataPut (I2C0_BASE, va_arg(vargs, uint8_t));
-        while (I2CMasterBusy (I2C0_BASE));
-        //send the finish signal to stop transmission
-        I2CMasterControl (I2C0_BASE, I2C_MASTER_CMD_BURST_SEND_FINISH);
-        while (I2CMasterBusy (I2C0_BASE));
-
-        va_end (vargs);
+        GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, 4);
     }
-
 }
 
-uint32_t I2C0_Read (uint8_t addr, uint8_t reg)
-//Read data from slave to master
-//Takes in the address of the device and the register to read from
+
+
+//---------------------------------------------------------------------------
+// delay()
+//
+// Creates a 500ms delay via TivaWare fxn
+//---------------------------------------------------------------------------
+void delay(void)
 {
-//find the device based on the address given
-    I2CMasterSlaveAddrSet (I2C0_BASE, addr, false);
-    while (I2CMasterBusy (I2C0_BASE));
-//send the register to be read on to the I2C bus
-    I2CMasterDataPut (I2C0_BASE, reg);
-    while (I2CMasterBusy (I2C0_BASE));
-//send the send signal to send the register value
-    I2CMasterControl (I2C0_BASE, I2C_MASTER_CMD_SINGLE_SEND);
-    while (I2CMasterBusy (I2C0_BASE));
-//set the master to read from the device
-    I2CMasterSlaveAddrSet (I2C0_BASE, addr, true);
-    while (I2CMasterBusy (I2C0_BASE));
-//send the receive signal to the device
-    I2CMasterControl (I2C0_BASE, I2C_MASTER_CMD_SINGLE_RECEIVE);
-    while (I2CMasterBusy (I2C0_BASE));
-//return the data read from the bus
-    return I2CMasterDataGet (I2C0_BASE);
+     SysCtlDelay(6700000);      // creates ~500ms delay - TivaWare fxn
+
 }
 
-void TSL2591_init ()
-//Initializes the TSL2591 to have a medium gain,
-{
-    uint32_t x;
-    x = I2C0_Read (TSL2591_ADDR, (TSL2591_COMMAND_BIT | TSL2591_ID));//read the device ID
-    if (x != 0x50)
-        while (1){};      //loop here if the dev ID is not correct
-
-//configures the TSL2591 to have medium gain adn integration time of 100ms
-    I2C0_Write (TSL2591_ADDR, 2, (TSL2591_COMMAND_BIT | TSL2591_CONFIG), 0x10);
-    //enables proper interrupts and power to work with TSL2591
-
-    I2C0_Write (TSL2591_ADDR, 2, (TSL2591_COMMAND_BIT | TSL2591_ENABLE),
-    (TSL2591_ENABLE_POWERON | TSL2591_ENABLE_AEN | TSL2591_ENABLE_AIEN |
-                                TSL2591_ENABLE_NPIEN));
-}
-
-uint32_t GetLuminosity ()
-//This function will read the channels of the TSL and returns the calculated value to the caller
-{
-    float atime = 100.0f, again = 25.0f;    //the variables to be used to calculate proper lux value
-    uint16_t ch0, ch1;  //variable to hold the channels of the TSL2591
-    uint32_t cp1, lux1, lux2, lux;
-    uint32_t x = 1;
-
-    x = I2C0_Read (TSL2591_ADDR, (TSL2591_COMMAND_BIT | TSL2591_C0DATAH));
-    x <<= 16;
-    x |= I2C0_Read (TSL2591_ADDR, (TSL2591_COMMAND_BIT | TSL2591_C0DATAL));
-
-    ch1 = x>>16;
-    ch0 = x & 0xFFFF;
-
-    cp1 =  (uint32_t) (atime * again) / TSL2591_LUX_DF;
-    lux1 = (uint32_t) ((float) ch0 - (TSL2591_LUX_COEFB * (float) ch1)) / cp1;
-    lux2 = (uint32_t) ((TSL2591_LUX_COEFC * (float) ch0) - (TSL2591_LUX_COEFD * (float) ch1)) / cp1;
-    lux = (lux1 > lux2) ? lux1: lux2;
-
-    return lux;
-}
-
-// Added Functions
-
-void delay_ms(uint32_t ms)
-// This function will set a time delay of the given milliseconds.
-{
-    SysCtlDelay(ms * ((SysCtlClockGet() / 3) / 1000));
-}
-
-void ADC_Temp_Init()
-// This function initializes the ADC to read the internal temperature sensor.
-// These codes came from the ADC Lab (Lab 5).
-{
-    // Enable hardware averaging to 64
-    ROM_SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC0);
-    ROM_ADCHardwareOversampleConfigure(ADC0_BASE, 64);
-
-    // Use SS2 for ADC
-    ADCSequenceConfigure(ADC0_BASE, 2, ADC_TRIGGER_PROCESSOR, 0);
-    ROM_ADCSequenceStepConfigure(ADC0_BASE, 2, 0, ADC_CTL_TS);
-    ROM_ADCSequenceStepConfigure(ADC0_BASE, 2, 1, ADC_CTL_TS);
-    ROM_ADCSequenceStepConfigure(ADC0_BASE, 2, 2, ADC_CTL_TS);
-    ROM_ADCSequenceStepConfigure(ADC0_BASE, 2, 3, ADC_CTL_TS|ADC_CTL_IE|ADC_CTL_END);
-    ROM_ADCSequenceEnable(ADC0_BASE, 2);
-}
-
-uint32_t GetTemperature()
-// This function will read the ADC values from the internal temperature sensor
-// and returns the temperature in Fahrenheit.
-// These codes came from the ADC Lab (Lab 5).
-{
-    // Variables
-    uint32_t ui32ADC0Value[4];          // ADC raw values
-    volatile uint32_t ui32TempAvg;      // average of raw values
-    volatile uint32_t ui32TempValueC;   // average temp in Celsius
-    volatile uint32_t ui32TempValueF;   // average temp in Fahrenheit
-
-    // Clear interrupt
-    ROM_ADCIntClear(ADC0_BASE, 2);
-    ROM_ADCProcessorTrigger(ADC0_BASE, 2);
-    while(!ROM_ADCIntStatus(ADC0_BASE, 2, false));
-
-    // Temperature Calculation (Averaging and Conversion)
-    ROM_ADCSequenceDataGet(ADC0_BASE, 2, ui32ADC0Value);
-    ui32TempAvg = (ui32ADC0Value[0] + ui32ADC0Value[1] + ui32ADC0Value[2] + ui32ADC0Value[3] + 2)/4;
-    ui32TempValueC = (1475 - ((2475 * ui32TempAvg)) / 4096) / 10;
-    ui32TempValueF = ((ui32TempValueC * 9) + 160) / 5;
-
-    return ui32TempValueF;
-}
-
-void ESP8266_Init()
-// This function initializes ESP8266 using UART to set up Wi-Fi connection.
-{
-    UARTprintf("AT \r\n");
-    delay_ms(5000); // delay to process previous command
-
-    // set ESP8266 Baud Rate
-    UARTprintf("AT+CIOBAUD=%d\n\r", BAUD_RATE);
-    delay_ms(5000); // delay to process previous command
-
-    UARTprintf("AT+CIPMUX=0 \n\r");
-    delay_ms(5000); // delay to process previous command
-
-    // set Wi-Fi mode to Infrastructure
-    UARTprintf("AT+CWMODE=1\n\r");
-    delay_ms(5000); // delay to process previous command
-
-    // configure SSID and password for Wi-Fi connection
-    UARTprintf("AT+CWJAP=\"Virus Detected\",\"Stewarts5+3\"\n\r");
-    delay_ms(10000); // wait to establish connection
-}
-
-void transmit_to_cloud(uint32_t lux)
-// This function will transmit lux data to Thingspeak cloud.
-{
-    char HTTP_POST[256]; // store text with lux and temp data => UART
-
-    // initial setup
-    UARTprintf("AT+CIPMUX=0\n\r"); // set single TCP connection
-    delay_ms(5000); // wait for connection
-    UARTprintf("AT+CIPSTART=\"TCP\",\"api.thingspeak.com\",80 \r\n"); // setup connection
-    delay_ms(5000); // wait for connection
-    UARTprintf("AT+CIPSEND=44");
-    delay_ms(5000); // wait for connection
-
-    // setup text to be transmitted with key and data
-    usprintf(HTTP_POST, "GET /update?key=W86U4X7NUJNKEMGGfield1=\n\r", lux);
-    delay_ms(5000); // wait for connection
-    UARTprintf("\r\n");
-
-    // send text to the cloud
-   // UARTprintf("AT+CIPSEND=%i\n\r", strlen(HTTP_POST)); // send length of text
-    delay_ms(500); // delay to process previous command
-    UARTprintf(HTTP_POST); // send text with data
-    delay_ms(15000); // ensure no other data can come in 15 seconds
-}
-
-int main(void)
-{
-    // Variables
-        uint32_t i = 0;         // loop variable
-        uint32_t lux = 0;       // calculated lux datum
-        uint32_t luxAvg = 0;    // average of lux data
-
-        //set the main clock to run at 40MHz
-        SysCtlClockSet(SYSCTL_SYSDIV_5|SYSCTL_USE_PLL|SYSCTL_XTAL_16MHZ|SYSCTL_OSC_MAIN);
-
-        // Configure Components
-        ConfigureUART ();   //configure the UART of Tiva C
-        I2C0_Init ();       //initialize the I2C0 of Tiva C
-        TSL2591_init ();    //initialize the TSL2591
-        ADC_Temp_Init();    //initialize the ADC to read internal temp sensor
-        //ESP8266_Init();     //initialize the ESP 8266 Wi-Fi connection
-        UARTCharPut(UART0_BASE, 'E');
 
 
-        //enable button 2 to be used during hibernation
-        SysCtlPeripheralEnable (SYSCTL_PERIPH_HIBERNATE);
-        //Get the system clock to set to the hibernation clock
-        HibernateEnableExpClk (SysCtlClockGet());
-        //Retain the pin function during hibernation
-        HibernateGPIORetentionEnable ();
-        //Set RTC hibernation
-        HibernateRTCSet (0);
-        //enable RTC hibernation
-        HibernateRTCEnable ();
-        //hibernate for 30 seconds
-        HibernateRTCMatchSet (0, 30);
-        //allow hibernation wake up from RTC time or button 2
-        HibernateWakeSet (HIBERNATE_WAKE_PIN | HIBERNATE_WAKE_RTC);
 
-        // Finds the average of the lux channel to send through uart
-        for (i = 0; i < 20; i++)
-        {
-            lux = GetLuminosity ();
-            luxAvg += lux;
-        }
-        luxAvg = luxAvg/20;
-
-        // Trasmit lux and temp value to Thingspeak
-       // transmit_to_cloud(luxAvg);
-        // Hibernate
-        HibernateRequest();
-        while (1);
-}
 
